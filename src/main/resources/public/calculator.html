@@ -6,34 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/calculator.css">
   <title>Document</title>
+  <script src="./calculator.js" defer></script>
 </head>
 <div>
-<body>
-  <h1 id="title">Grade Calculator</h1>
-  <main id="main">
-    <h2 id="activity">Activities</h2>
-    <p id="text1">Give grades to the numeric activities:</p>
-    <table id="table" >
-      <tr>
-        <th id="name">Name</th> <th id="short_name">Short Name</th> <th id="weightt">Weight</th> <th id="grade">Grade</th> <th id="percent">Percent</th>
-      </tr>
-      <tr>
-        <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" ></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
-      </tr>
-      <tr>
-        <td>Activity 2</td> <td>A2</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
-      </tr>
-      <tr>
-        <td>Activity 3</td> <td>A3</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
-      </tr>
-      <tr>
-        <td>Activity 4</td> <td>A4</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1" ></td> <td></td>
-      </tr>
-    </table>
-    <h2 id="result">Result</h2>
-    <button type="button" class="button">MEAN</button> 
-    <button type="button" class="button">WEIGHTED</button> 
-  </main>
+  <body>
+    <h1 id="title">Grade Calculator</h1>
+    <main id="main">
+      <h2 id="activity">Activities</h2>
+      <p id="text1">Give grades to the numeric activities:</p>
+      <table id="table" >
+        <tr>
+          <th id="name">Name</th> <th id="short_name">Short Name</th> <th id="weightt">Weight</th> <th id="grade">Grade</th> <th id="percent">Percent</th>
+        </tr>
+        <tr>
+          <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" ></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+        </tr>
+        <tr>
+          <td>Activity 2</td> <td>A2</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+        </tr>
+        <tr>
+          <td>Activity 3</td> <td>A3</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+        </tr>
+        <tr>
+          <td>Activity 4</td> <td>A4</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1" ></td> <td></td>
+        </tr>
+      </table>
+      <h2 id="result">Result</h2>
+      <form action="/process_form" method="post">
+        <button type="button" class="button" id="meanBut">MEAN</button> 
+        <button type="button" class="button" id="weightBut">WEIGHTED</button> 
+      </form>
+    </main>
+  </body>
 </div>
-</body>
 </html>
