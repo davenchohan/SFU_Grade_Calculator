@@ -14,6 +14,7 @@ body {
     font-size: 18px;
     margin-left: 30px; 
     margin-top: 25px; 
+    width: 1000px;
 }
 
 .box{
@@ -101,8 +102,9 @@ td{
 
 #title{
     font-size: 25px;
-    margin-left: 50px; 
-    margin-top: -25px;
+}
+
+div{
     background-color: #ffffff;
     padding-bottom: 2%;
     padding-top: 2%;
@@ -111,13 +113,20 @@ td{
     border-top: 50px solid #3d3935;
     border-bottom: 50px solid #3d3935;
     padding-right: 700px;
+    min-width: 370px;
+    box-shadow: 0px 0px 8px black;
+    margin-top: -25px;
+    margin-left: 50px;
 }
 
+
 #main{
+    margin-top: 2%;
     background-color: #e9eff1;
     border: 2px solid #dce9eb;
     padding-bottom: 65px;
     padding-right: 20px;
+    min-width: 1030px;
 }
 
 
