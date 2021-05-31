@@ -19,19 +19,20 @@
           <th id="name">Name</th> <th id="short_name">Short Name</th> <th id="weightt">Weight</th> <th id="grade">Grade</th> <th id="percent">Percent</th>
         </tr>
         <tr>
-          <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" ></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+          <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" id="weight1" ></td> <td class="slash"><input type="text" class="box" id="mark1" oninput="test1()"> / <br> <input type="text" class="box1" id="total1" oninput="test1()"></td> <td id="displayP1"></td>
         </tr>
         <tr>
-          <td>Activity 2</td> <td>A2</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+          <td>Activity 2</td> <td>A2</td> <td><input type="text" class="box2" id="weight2" ></td> <td class="slash"><input type="text" class="box" id="mark2" oninput="test1()"> / <br> <input type="text" class="box1" id="total2" oninput="test1()"></td> <td id="displayP2"></td>
         </tr>
         <tr>
-          <td>Activity 3</td> <td>A3</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1"></td> <td></td>
+          <td>Activity 3</td> <td>A3</td> <td><input type="text" class="box2" id="weight3" ></td> <td class="slash"><input type="text" class="box" id="mark3" oninput="test1()"> / <br> <input type="text" class="box1" id="total3"  oninput="test1()"></td> <td id="displayP3"></td>
         </tr>
         <tr>
-          <td>Activity 4</td> <td>A4</td> <td><input type="text" class="box2"></td> <td class="slash"><input type="text" class="box"> / <br> <input type="text" class="box1" ></td> <td></td>
+          <td>Activity 4</td> <td>A4</td> <td><input type="text" class="box2" id="weight4" ></td> <td class="slash"><input type="text" class="box" id="mark4" oninput="test1()"> / <br> <input type="text" class="box1" id="total4" oninput="test1()"></td> <td id="displayP4"></td>
         </tr>
       </table>
       <h2 id="result">Result</h2>
+      <p id="finalResult"></p>
       <form action="/process_form" method="post">
         <button type="button" class="button" id="meanBut">MEAN</button> 
         <button type="button" class="button" id="weightBut">WEIGHTED</button> 
