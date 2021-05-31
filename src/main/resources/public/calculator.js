@@ -84,5 +84,11 @@ function weight(){
     }
     var weightTotal = ((percent1*weightTemp1)+(percent2*weightTemp2)+(percent3*weightTemp3)+(percent4*weightTemp4));
     var finalWeight = weightTotal/(weightTemp1+weightTemp2+weightTemp3+weightTemp4);
-    document.getElementById("finalResult").innerHTML = finalWeight.toFixed(3) + " or " + finalWeight.toFixed(3)*100 + "%" + " is the weighted average.";;
+
+    if(isNaN(finalWeight)){
+        document.getElementById("finalResult").innerHTML = "Error"
+    }
+    else{
+        document.getElementById("finalResult").innerHTML = finalWeight.toFixed(3) + " or " + finalWeight.toFixed(3)*100 + "%" + " is the weighted average.";;
+    }
 }
