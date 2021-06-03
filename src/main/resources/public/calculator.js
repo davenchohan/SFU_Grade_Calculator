@@ -1,8 +1,10 @@
-
+// Hide Extra Rows
 document.getElementById("addActivity5").style.display = "none";
 document.getElementById("addActivity6").style.display = "none";
 document.getElementById("addActivity7").style.display = "none";
 document.getElementById("addActivity8").style.display = "none";
+
+// Calculate Percent Column
 function test1(){
     numGrades = 8;
     percent1 = document.getElementById("mark1").value/document.getElementById("total1").value;
@@ -95,6 +97,7 @@ function test1(){
     } 
 }
 
+// Calculate and display mean
 document.getElementById("meanBut").addEventListener("click", mean);
 
 function mean(){
@@ -108,6 +111,7 @@ function mean(){
     }
 }
 
+// Calculate and display weighted average
 document.getElementById("weightBut").addEventListener("click", weight);
 
 function weight(){
@@ -179,6 +183,7 @@ function weight(){
     }
 }
 
+// Add extra rows
 document.getElementById("addRows").addEventListener("click", rows);
 function rows(){
     document.getElementById("addActivity5").style.display = "table-row";
@@ -187,6 +192,7 @@ function rows(){
     document.getElementById("addActivity8").style.display = "table-row";
 }       
 
+// Reset All rows
 document.getElementById("resetRows").addEventListener("click", resetRows);
 function resetRows(){
     var i;
