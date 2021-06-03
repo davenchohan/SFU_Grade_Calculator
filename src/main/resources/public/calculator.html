@@ -8,7 +8,7 @@
   <title>Document</title>
   <script src="./calculator.js" defer></script>
 </head>
-<div>
+<div id="divBody">
   <body>
     <h1 id="title">Grade Calculator</h1>
     <main id="main">
@@ -19,7 +19,7 @@
           <th id="name">Name</th> <th id="short_name">Short Name</th> <th id="weightt">Weight</th> <th id="grade">Grade</th> <th id="percent">Percent</th>
         </tr>
         <tr>
-          <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" id="weight1" ></td> <td class="slash"><input type="text" class="box" id="mark1" oninput="test1()"> / <br> <input type="text" class="box1" id="total1" oninput="test1()"></td> <td id="displayP1"></td>
+          <td>Activity 1</td> <td>A1</td> <td><input type="text" class="box2" id="weight1"></td> <td class="slash"><input type="text" class="box" id="mark1" oninput="test1()"> / <br> <input type="text" class="box1" id="total1" oninput="test1()"></td> <td id="displayP1"></td>
         </tr>
         <tr>
           <td>Activity 2</td> <td>A2</td> <td><input type="text" class="box2" id="weight2" ></td> <td class="slash"><input type="text" class="box" id="mark2" oninput="test1()"> / <br> <input type="text" class="box1" id="total2" oninput="test1()"></td> <td id="displayP2"></td>
@@ -30,12 +30,26 @@
         <tr>
           <td>Activity 4</td> <td>A4</td> <td><input type="text" class="box2" id="weight4" ></td> <td class="slash"><input type="text" class="box" id="mark4" oninput="test1()"> / <br> <input type="text" class="box1" id="total4" oninput="test1()"></td> <td id="displayP4"></td>
         </tr>
+        <tr id = "addActivity5">
+          <td>Activity 5</td> <td>A5</td> <td><input type="text" class="box2" id="weight5" ></td> <td class="slash"><input type="text" class="box" id="mark5" oninput="test1()"> / <br> <input type="text" class="box1" id="total5" oninput="test1()"></td> <td id="displayP5"></td>
+        </tr>
+        <tr id = "addActivity6">
+          <td>Activity 6</td> <td>A6</td> <td><input type="text" class="box2" id="weight6" ></td> <td class="slash"><input type="text" class="box" id="mark6" oninput="test1()"> / <br> <input type="text" class="box1" id="total6" oninput="test1()"></td> <td id="displayP6"></td>
+        </tr>
+        <tr id = "addActivity7">
+          <td>Activity 7</td> <td>A7</td> <td><input type="text" class="box2" id="weight7" ></td> <td class="slash"><input type="text" class="box" id="mark7" oninput="test1()"> / <br> <input type="text" class="box1" id="total7" oninput="test1()"></td> <td id="displayP7"></td>
+        </tr>
+        <tr id = "addActivity8">
+          <td>Activity 8</td> <td>A8</td> <td><input type="text" class="box2" id="weight8" ></td> <td class="slash"><input type="text" class="box" id="mark8" oninput="test1()"> / <br> <input type="text" class="box1" id="total8" oninput="test1()"></td> <td id="displayP8"></td>
+        </tr>
       </table>
       <h2 id="result">Result</h2>
       <p id="finalResult"></p>
       <form action="/process_form" method="post">
         <button type="button" class="button" id="meanBut">MEAN</button> 
         <button type="button" class="button" id="weightBut">WEIGHTED</button> 
+        <button type="button" class="button" id="addRows">ADD ROWS</button> 
+        <button type="button" class="button" id="resetRows">RESET</button> 
       </form>
     </main>
   </body>
